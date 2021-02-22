@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <style>
+        #parent{
+            /*
+            부모의 요소중 시각적으로 표현되는 것이 없다면
+            자식 엘리먼트는 부모엘리먼트의 시각적으로 표현되는 것 있었다면 그 요소가
+            표현되는 자리로 올라온다.(margin-top 100px 만큼의 자리로 위치한다.)
+            */
+            /* border:1px solid tomato; */
+            margin-top: 100px;
+        }
+        #child{
+            background-color:powderblue;
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            Hello world
+        </div>
+    </div>
+</body>
+</html>

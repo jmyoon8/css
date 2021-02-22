@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        *{
+             /* 똑같은 사이즈를 주더라도 각각의 border과 관련된 값에 따라 사이즈가 다르다  때문에 box-sizing를 사용한다*/
+
+            /* 경계의 크기가 똑같아진다. */
+            box-sizing:border-box;
+        }
+        div{
+            margin:10px;
+            width:150px;
+           
+        }
+        #small{
+            border:10px solid black;
+        }
+        #large{
+            border:30px solid black;
+        }
+    </style>
+</head>
+<body>
+       <div id="small">Hello</div>
+       <div id="large">Hello</div>
+</body>
+</html>

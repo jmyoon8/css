@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        html{
+            border :1px solid gray;
+        }
+        div{
+            border:5px solid tomato;
+            margin:10px
+        }
+        #me{
+            /* 모든 엘리먼트들은 기본적인 position의 속성은
+            
+            static으로 되어있다(정적) 이상태일땐 offset이 안먹힌다.
+
+            relative는 상대적인 위치를 기준으로 한다( #me의 부모인 #parent를 기준으로)
+             */
+            position:relative; 
+            
+            /* 아래 offset 요소들이 right, bottom보다. 우선시된다.*/
+            left:100px;
+            top:100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="parent" >
+        parent
+        <div id="me">me</div>
+    </div>
+    
+</body>
+</html>

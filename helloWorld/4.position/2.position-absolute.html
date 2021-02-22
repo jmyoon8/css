@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #parent,#other, #parent{
+            border:5px solid tomato;
+        }
+       #grand{
+            position: relative;
+        }
+        #me{
+            background-color: black;
+            color:white;
+            /* 
+                absolute는 가장 상위테그인 html 태그를 기준으로하지만
+                부모태그중에 position이 relative인것이 있으면 그 부모태그에 자식으로 들어가며
+                그곳에서 자신의 offset의 값을 가진다.
+             */
+            position:absolute;
+            /* 
+                absolute는 offset을 지정해주어야 위치를 이동한다(지정하지 않으면 원래 있던 자리로간다.) 
+                또한 부모에게서 떨어저나간다.
+            */
+            left:0px;
+            top:0px
+        }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="grand">
+        grand
+        <div id="parent" >
+            parent
+            <div id="me">me</div>
+        </div>
+    </div>
+    
+</body>
+</html>

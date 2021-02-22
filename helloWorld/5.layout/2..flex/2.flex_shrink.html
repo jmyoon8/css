@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+       
+        .container{
+
+            display: flex;  
+            height: 200px;
+
+            
+            flex-direction: row;
+            background-color: powderblue;
+        }
+        .item{
+            
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+            
+        }
+        .item:nth-child(1){
+            
+            flex-basis: 500px;
+            
+            /* 슈랭크(움츠려들다) 0(false) 를주면  화면이 작아지더라도 해당 엘리먼트는 작아지지 않는다.-기본적으로 flex-basis값이 있어야한다.*/
+            /* 그이후에 1~이상의 값은 배율을 뜻한다 (배수만큼 더 많이 움추려든다는 듯) */
+            flex-shrink: 3;
+        }
+        .item:nth-child(2){
+            /* 1번이 2번보다 3배 많이 움츠려든다. */
+            flex-basis: 500px;
+            flex-shrink: 1;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

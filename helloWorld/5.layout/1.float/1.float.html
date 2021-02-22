@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        img{
+            height: 400px;
+            /* 플롯은 다른 요소들에 흘러가듯이 존재한다 */
+            float: right;   
+            margin:30px;
+        }
+        p{
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <img src="./2.png" >
+    <!-- float이 먹여져있는 엘리먼트를 다른 엘리먼트이 피하지 않는다. -->
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad repellendus delectus magnam voluptatem aliquid, praesentium velit odit? Maxime repudiandae aliquid quo iste fugit saepe hic natus similique. Officia, esse asperiores!
+        Sunt distinctio, omnis aliquid quas deserunt quidem dolorum aliquam nisi nesciunt ex laborum maxime corrupti est repudiandae ratione? Temporibus suscipit sapiente dicta consequatur a cum nisi similique? Quis, esse corporis.
+        Modi saepe minus itaque totam quia sunt rem eum maiores doloribus cupiditate illum aperiam, dolores aspernatur maxime enim adipisci ipsam quaerat veniam, unde, eos blanditiis possimus a iure doloremque! Corrupti.
+    </p>
+
+    <!--피해가도록 하기 위해선 clear 속성을 이용한다.-->
+    <p style="clear: right;">
+        Sapiente tempore obcaecati reiciendis voluptatum, consectetur quaerat odit harum, doloribus voluptate necessitatibus sit laborum, labore officiis molestias esse quos animi quibusdam eos a. Autem consectetur aperiam ab voluptas necessitatibus accusamus.
+        Exercitationem libero repudiandae magnam, itaque mollitia ullam vero veritatis quidem praesentium assumenda maiores explicabo autem sapiente aperiam rem tempora, numquam ipsum. Pariatur, iste perferendis nam aspernatur molestiae sequi. Adipisci, dolores.
+        
+    </p>
+        
+        
+</body>
+</html>

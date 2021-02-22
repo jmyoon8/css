@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        /* 부모의(html) css를 정해주면 모든 자식들이 영향을 받는다.->개발자 도구에가면 자식들의 style정보를 보면 inheritment(상속)으로 어떤 속성을 상속받았는지 알 수 있다. */
+        html{
+            color: red;
+        }
+        #js{
+            color: blue;
+        }
+        body{
+            /* 보더같은경우는 상속되는것이 더 불편하기 때문에 상속시키지 않는다. */
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>수업내용</h1>
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li id="js">javascript</li>
+
+    </ul>
+</body>
+</html>

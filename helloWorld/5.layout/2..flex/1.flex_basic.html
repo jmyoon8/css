@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        /*   
+            flex는 부모 자식 태그가 기본으로 준비가 되어있어야된다.
+            부모에게 주는 속성이 있고
+            자식에게 주는 속성이 따로 있다. 
+         */
+        .container{
+            /* 
+             flex는 기본적으로 부모엘리먼트에 display를 flex으로 준다. 
+             또한 기본적인 flex-direction은 row로 설정되어있다.
+             또한 각각 자식 일리먼트들은 지정한 방향으로 모든 공간을 다 먹는다(row면 해당행을 다먹는다.)
+             */
+            display: flex;  
+            height: 200px;
+            
+            /* 리버스는 거울처럼 뒤집는다.*/
+            flex-direction: column-reverse;
+            background-color: powderblue;
+        }
+        .item{
+            
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

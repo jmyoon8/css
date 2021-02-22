@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        /* 스타일의 우선순위는 style attri >id>class>tag순이다.  즉 구체적인 것이 우선순위가 높고 일반적인것이 우선 순위가 적다 하지만 우선순위를 강재로 정할땐 !important을 쓴다.*/
+        li{
+            color: red !important;
+        }
+        .class{
+            color:green;
+        }
+        #sel{
+            color:grey
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="sel" class="class">html</li>
+        
+    </ul>
+</body>
+</html>

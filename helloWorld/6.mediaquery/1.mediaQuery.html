@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        /*
+        
+         max-width:800px
+         해당 기기의 width가 최대 800픽샐 이상일경우 적용
+         
+         
+         min-width:800px
+         해당 기기의 width가 최소 800px 이상의 일경우 적용
+
+          */
+          /* cascade 의 형식으로 작은것 부터 적용된다. */
+        @media (max-width: 900px){
+            body{
+                background-color: red;
+        }
+        }
+        @media (max-width: 700px){
+            body{
+                background-color: blue;
+            }
+    
+        }
+        /* 위에 max-width의 최대 값이 이상의 미디어 일경우 min값을 주어 다시 적용한다. */
+        @media  (min-width:901px) {
+            body{
+                background-color: green;
+            }
+        }
+        
+       
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

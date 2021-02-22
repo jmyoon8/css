@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        /* 선택자 부모의 모든 자손을 선택 */
+       ul li{
+            color: red;
+            text-decoration: none;
+        }
+        
+           /* 선택자 바로 직속 엘리먼트를 선택(자식) */
+        #lecture>li{
+            width: 100%;
+            border: 1px solid red;
+         
+        
+        }
+        /* 여러가지 엘리먼트를 여러게 선택 가능  */
+        ol, ul{
+            background-color: royalblue;
+            width: 100%;
+        }       
+        
+        /* 그외엔 cheatSheet를 참고하자 onenote에있다. */
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+    <ol id="lecture">
+        <li>HTML</li>
+        <li>CSS
+            <ol>
+                <li>selector</li>
+                <li>declaration</li>
+            </ol>
+        </li>
+        <li>Javascript</li>
+        <li>Javascript</li>
+    </ol>
+</body>
+</html>
