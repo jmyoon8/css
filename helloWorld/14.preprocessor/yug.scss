@@ -1,0 +1,21 @@
+
+// scss는 부모자식 엘리먼트를 다음과 같이 표현하여 css를 먹일 수 있다.
+.title {
+    p {
+        font-weight: bold;
+    font-size: 20px;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #000;
+    }
+    ul {
+        li {
+            &:last-child {
+                width: 100px;
+                height: 20px;
+                background-color: red;
+            }
+        }
+    }
+}

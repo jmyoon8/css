@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <style>
+        a{
+            font-size:3rem;
+            display: inline-block;
+
+            /*
+            적용된 엘리먼트에 어떠한 속성이 바뀌면 
+            트랜젝션을 적용할지 정한다 여러게 줄 수 도있고
+            all은 모든 속성에 관해서 바뀐다.
+        
+             */
+            /* transition-property: all; */
+            
+            /* 장면이 바뀔 때 흐르는 총시간을 정한다. */
+            /* transition-duration: 1s; */
+            
+            transition : 1s font-size, transform 2s
+            /* 각각 다른 시간을 적용 할 수 있다. */
+
+        }
+        a:active{
+            font-size: 2rem;
+            
+            
+            transform: translate(20px,20px);
+        }
+    </style>
+</head>
+<body>
+    <a href="#">click</a>
+    
+</body>
+</html>

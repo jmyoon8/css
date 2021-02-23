@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <style>
+        div{
+            
+            background: black;
+            color: wheat;
+            width: 100px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition:height 1s;
+            /* 큐빅 베지어는 커스터마이징 할 수 있다 */
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        div:active{
+            height: 200px;
+        }
+        body{
+            background: black;
+            transition:all 1s;
+
+        }
+    </style>
+    <script>
+        function onload(){
+            document.getElementById('body').style.backgroundColor="white"
+        }
+    </script>
+
+</head>
+<body id="body" onload="onload()">
+    <div>
+        TRANSITION
+    </div>
+    
+</body>
+</html>

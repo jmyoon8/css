@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        img{
+            /* 장면 전환시 실행된는 옵션 무언가가 바뀔 때 자연스럽게 실행 되도록 한다. */
+            transition: all 1s;
+        }
+        /* 벤터 프리픽스 : 실험적으로 해당 css를 지원한다.-webkit-은 크롬 사파리  -o-는 오페라*/
+        img:hover{
+            /* 흑백효과 */
+            -webkit-filter: grayscale(50%);
+            -o-filter:grayscale(50%);
+            filter:grayscale(100%)
+        }
+        h1{
+            /* 장면 전환시 실행된는 옵션 */
+            transition: all 1s;
+        }
+        h1:hover{
+            /* 블러는 택스트에도 적용가능 px으로 적용 */
+            filter: blur(1px);
+        }
+    </style>
+</head>
+<body>
+    <!--
+    https://css-tricks.com/almanac/properties/f/filter/
+    https://bennettfeely.com/image-effects/
+    필터기능 예제
+     -->
+    <img src="q681q.jpg">
+    <h1>
+        dddddd
+    </h1>
+</body>
+</html>
