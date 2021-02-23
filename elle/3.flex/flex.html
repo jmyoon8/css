@@ -6,12 +6,44 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
+
+       
+        /* 100%를 배경으로 주려면 html부터 주어야한다.(html이 최상위 태그이므로) */
         .container{
             background: beige;
+            /* vh는 브라우저의 높이값(상대적인값을 의미한다) */
             height: 100vh;
+            display: flex;
+            
+            /* flex-direction: row; */
+            
+            /* 화면이 작아지면 요소들이 줄어드는 대신 밑으로 넘어감 */
+            /* flex-wrap: wrap; */
+
+
+            /* 두가지 속성을 합친것 */
+            flex-flow: row wrap;
+            
+            /* justify-content는 수평 축에서 위치 지정(ㅡ) */
+            justify-content: center;
+            justify-content: space-around;
+            /* align-items 는 수직 축에서 위치 지정(ㅣ) */
+            align-items: center;
+            /* align-items:baseline은 택스트의 위치에 맞춰서 정렬한다. 또한 다른 속성도 기본적으로 baseline의 속성을 가지고있다 */
+
+            align-content: center;
+
+            
+            
+        }
+        .item{
+            width: 40px;
+            height: 40px;
+            border: 1px solid black
         }
         .item1{
             background: darkcyan;
+            padding: 20px;
         }
         .item2{
             background: blueviolet;
@@ -29,16 +61,16 @@
                 background: deeppink;
         }
         .item7{
-            background: beige;
+            background:cadetblue ;
         }
         .item8{
-            background: beige;
+            background: tomato;
         }
         .item9{
-            background: beige;
+            background: deeppink;
         }
         .item10{
-            background: beige;
+            background: deepskyblue;
         }
     </style>
 </head>
@@ -53,8 +85,11 @@
         <div class="item item7">7</div>
         <div class="item item8">8</div>
         <div class="item item9">9</div>
-        <div class="item item10">10</div>        
+        <div class="item item10">10</div>
     </div>
-    
+    <!--
+         div.container>div.item.item${$}*10
+         에밋
+     -->
 </body>
 </html>

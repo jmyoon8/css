@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+       
+        .container{
+
+            display: flex;  
+            height: 200px;
+            flex-direction: row;
+            background-color: powderblue;
+        }
+        .item{
+/* 이런식으로 flex-basis를 0으로주고
+ grow를 1:2:1로 주면 화면을 1:2:1 로 나눠 가질 수 있다. */
+            /* flex-basis:0; */
+        }
+        .item:nth-child(1){
+            background-color: chocolate;
+            flex:1;
+            /* flex-grow: 1; */
+        }
+        .item:nth-child(2){
+            /* flex-grow: 2; */
+            flex:2;
+        }
+        .item:nth-child(3){
+            background-color: chocolate;
+            /* flex-grow: 1; */
+            flex:1;
+            
+        }
+/* 다른방법은 basis를 빼고 그냥 flex:1, flex:2,,, 이런식으로 주는방법 */
+    </style>
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>
