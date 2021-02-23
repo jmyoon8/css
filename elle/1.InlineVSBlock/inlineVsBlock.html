@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        div ,span{
+            width: 80px;
+            height: 80px;
+            margin: 20px;
+            
+        }
+        div{
+            background: pink;
+        }
+        span{
+            /* // 스판은 inline속성을 가지고 있따
+            //inline은 안애 "내용"만 꾸밀 수 있다. */
+            background: blue;
+        }
+        .inlineBlock{
+            display: inline-block;
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+
+<!-- span은 안에 내용만을 꾸며준다-->
+
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+<br>
+<!-- 인라인 블럭은 블럭인대 한줄에 존재하게 한다; -->
+    <div class="inlineBlock"></div>
+    <div class="inlineBlock"></div>
+    <div class="inlineBlock"></div>
+
+
+</body>
+</html>

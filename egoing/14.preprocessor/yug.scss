@@ -11,6 +11,7 @@
     }
     ul {
         li {
+            // &는 자기 자신의 엘리먼트를 지정한다;
             &:last-child {
                 width: 100px;
                 height: 20px;
