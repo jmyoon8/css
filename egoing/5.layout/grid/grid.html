@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .container{
+            display: grid;
+            /* 
+                grid-template-columns 그리드를 컬럼 단위로 보기
+                나눌 구간의 갯수만큼 값을 부여
+
+                %는 스크롤이생긴다
+                grid-template-columns: 40% 40%;   
+
+                fr는 스크롤이 안생긴다.   
+                grid-template-columns: 40fr 40fr;   
+                
+                px로 고정된 값을 줄 수 있다.
+                grid-template-columns: 200px 1fr;
+
+                repeat 은 반복횟수,값 을 파라미터로한다.
+                grid-template-columns: repeat(3,1fr);
+
+            */
+            grid-template-columns: 1fr 1fr 1fr;
+            /* 그리드자식들을 모두 똑같이 맞추기 
+               grid-auto-rows에 px값을 줘도 되고
+
+                minmax를 이용해 최소~최대값을 줄수있다.
+            */
+                grid-auto-rows:minmax(5em,auto);
+
+            /* 아이템들에 대해서 각자의 격자안에서의 위치를 변경할수있다.
+                justify-items: center;
+                align-items: center;
+                자식요소에 nth-child로 접근하여 따로 속성을 부여할 수도있다.
+             */
+            /* 그리드 요소간에 간격(gap)을 부여 */
+                grid-gap: 0.2rem;
+            
+        }
+        /* 특정한 그리드를 컬럼/로우를 차지하도록 할수도있따. */
+        .item:nth-child(1){
+            /* 
+            1~4를 표현할때
+            (왜 4인 이유는 격자가 있으면 밖에 있는 선도 포함시키기 때문)
+             */
+             height: 5em;
+            grid-column:1/4;
+        }
+        .item:nth-child(4){
+            /* 컬럼의 위치를 변경 시켜줄 수 있다. */
+            grid-column: 3;
+            grid-row:2/4
+        }
+        .item:nth-child(9){
+            /* 그리드 겹치기 */
+            grid-column: 3;
+            grid-row: 3/5;
+        }
+        .item{
+            background: brown;
+        }
+        .item:nth-child(odd){
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam expedita architecto quasi molestias natus eaque quam obcaecati animi harum laboriosam adipisci voluptatibus, exercitationem odio a doloremque voluptate dicta aut porro.
+           
+        </div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>     
+</body>
+</html>
